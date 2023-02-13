@@ -1,0 +1,36 @@
+img{
+    float:right;
+    height: 200px;
+    height: 100px;
+}
+.blue-box
+{
+ background-color: deepskyblue;
+ width: 300px;
+ height: 300px;
+ position: sticky;
+ top: 10px;
+ /* position: absolute;*/
+} 
+.yellow-box
+{
+    background-color: rgb(242, 242, 241);
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    /* position: absolute;NON STATIC CHECK */
+    /* position: fixed;--It takes from root */
+    position:absolute;
+    top: 100px;
+    left: 100px;
+    /*if static na not work */
+    /* position: relative;
+    /* left: 20px;
+    top: 20px;
+     */
+     /* bottom: 200px;
+     left: 100px; */ 
+     /* position: absolute;*/
+     /* position: fixed; */
+
+} 

@@ -1,0 +1,87 @@
+body
+{
+    background: rgb(242, 156, 156);
+}
+.container
+{
+    display: grid;
+    /* grid-template-columns: minmax(200px,1fr) 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.para
+{
+    padding: 1rem;
+    background-color: deepskyblue;
+}
+.outerbox
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 200px;
+    grid-auto-rows: 200px;
+    gap: 20px;
+    row-gap: 10px ;
+}
+.box{
+    background-color: green;
+    display: grid;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+#box1
+{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* grid-column: 1/-1; */
+    /* grid-column: span 2; */
+    grid-row: span 3;
+    justify-self: stretch;
+    
+}
+#box2
+{
+    grid-column: span 2;
+}
+.layout
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    
+    " h h h h h"
+    "sb1 m m m sb2"
+    "f f f f f";
+}
+.header
+{
+    grid-area: h;
+}
+.aside-bar1
+{
+    grid-area: sb1;
+}
+.main-content
+{
+    grid-area: m;
+}
+.aside-bar2
+{grid-area: sb2;}
+.footer
+{
+    grid-area: f;
+}
+.layout div
+{
+    display: grid;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    font-size: 2rem;
+
+}

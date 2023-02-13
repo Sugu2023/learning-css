@@ -1,0 +1,47 @@
+@media (min-width: 900px)
+{
+    body
+    {
+        background-color: deepskyblue;
+        font-size: 50px;
+    }
+}
+@media (max-width:500px) 
+{
+    body
+    {
+        font-size: 1rem;
+        background-color: rgb(226, 226, 6);
+        font-size: 30px;
+    }
+}
+@media print 
+{
+    body {
+        font-size: 70px;
+        font-family:serif;
+        font-weight: bold;
+        background-color: hotpink
+    };
+}
+@media (orientation:PORTRAIT)
+{
+    body 
+    {
+        color: RED;
+    }
+}
+@media (orientation:landscape)
+{
+    body
+    {
+        color: blue;
+    }
+}
+@media (hover:hover)
+{
+    #heading
+    {
+        background-color: aqua;
+    }
+}
