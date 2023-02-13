@@ -1,0 +1,183 @@
+h1{
+    color:blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.flex-box
+{
+    display: flex;
+    
+    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-content: center;
+    order: 4;
+    
+
+}
+.flex-item
+{
+    height: 200px;
+    width:200px;
+    color:black;
+    text-align: center;
+    font-size: 3em;
+    border: 1px solid black;
+    background-color: aqua;
+    padding: 5px;
+}
+.navigation-bar
+{
+   
+    background-color: deepskyblue;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end   ;
+    list-style-type: none;
+
+   
+}
+.navigation-bar li{
+    list-style-type: none;
+   
+}
+.navigation-bar a{
+    text-decoration: none;
+    padding: 1em;
+    color: black;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navigation-bar a:hover{
+    background-color: #1565C0;
+}
+
+@media all and (max-width:800px)
+{
+    .navigation-bar
+    {
+        justify-content: space-around;
+    }
+}
+@media all and (max-width:600px)
+{
+    .navigation-bar
+    {
+        flex-direction: column;
+        
+        padding: 0;
+    }
+    .navigation-bar li a { 
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255,0.3); 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+      }
+      .navigation-bar li:last-of-type a {
+        border-bottom: none;
+      }
+    
+}
+/*...aside...*/
+.wrapper
+{
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+.wrapper >*
+{
+    padding: 10px;
+    flex: 1 100%;
+}
+.header
+{
+    background-color: cadetblue;
+    border: 1px solid black;
+}
+.footer
+{
+    background-color: #1565C0;
+}
+.main{
+    text-align: left;
+}
+.aside-1
+{
+    background-color: gold;
+}
+.aside-2
+{
+    background-color: hotpink;
+    flex-basis: 3em;
+}
+@media all and (min-width:600px)
+{
+    .aside{flex: 1 0 0;}
+}
+@media all and(max-width:800px)
+{
+    .main{flex:  3 0px;}
+    .aside-1{order:1;}
+    .main{order:2;}
+    .aside-2{order:3;}
+    .footer{order: 4px;}
+}
+.para
+{
+    columns:12 8em;
+    /* font-size: 30px; */
+    font-size: 2rem;
+
+}
+@media (any-hover:hover)
+{
+    a:hover{
+        background: yellow;
+    }
+    p:hover{
+        background: #1565C0;
+    }
+}
+input[type="checkbox"]
+:checked{
+   background:  red;
+}
+@media (any-pointer: fine)
+{
+    input[type="checkbox"]
+    {
+        height: 15px;
+        width: 200px;
+        
+        border: 5px solid blue
+    }
+}
+@media (any-pointer: coarse) {
+    input[type="checkbox"] {
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      border: 2px solid red;
+    }
+  }
+  @media (min-aspect-ratio: 8/5) {
+    #inner {
+      background: #9af; /* blue */
+    }
+  }
+  
+  /* Maximum aspect ratio */
+  @media (max-aspect-ratio: 3/2) {
+    #inner {
+      background: #9ff; /* cyan */
+    }
+  }
+  
+  /* Exact aspect ratio, put it at the bottom to avoid override*/
+  @media (aspect-ratio: 1/1) {
+    #inner {
+      background: #f9a; /* red */
+    }

@@ -1,0 +1,82 @@
+*
+{
+    font-size: 20px;
+}
+h1{
+    font-size: larger;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic  ;
+}
+#id-selectors
+{
+    padding-left: 20px;
+    margin: 20px;
+    color: purple;
+}
+.class-selectors
+{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+a[href="https://www.google.com"]
+{
+    font-size: 50px;
+}
+.parent > p
+{
+    background-color: aqua;
+}
+.parent+p
+{
+    background-color: cadetblue;
+}
+.parent ~ p{
+    color: red;
+}
+p:nth-last-child(2)
+{
+    color: rgb(255, 0, 179);
+}
+#cm
+{
+    font-size: 1cm;
+}
+.units span
+{
+    color: rgb(17, 49, 7);
+    font-weight: bold;
+}
+#mm
+{
+    font-size: 5mm;
+}
+/* #in
+{
+    font-size:  1in;
+} */
+#px
+{
+    font-size: 20px;
+}
+#pt
+{
+    font-size: 20pt;
+}
+#pc
+{
+    font-size: 1pc;
+}
+#em
+{
+    font-size: 1em;
+}
+#rem
+{
+    font-size: 2rem;
+}
+#per
+{
+    font-size: 100%;
+}
